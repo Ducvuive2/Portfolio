@@ -135,6 +135,16 @@
     </button>
 
     <script>
+        // Prevent scroll restoration
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        
+        // Reset scroll position on page load
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+        
         // Add shadow to header on scroll
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
