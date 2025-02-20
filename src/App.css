@@ -388,6 +388,7 @@ a:hover .fab {
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
   animation-delay: 1s;
+  text-align: center;
 }
 
 @keyframes fadeIn {
