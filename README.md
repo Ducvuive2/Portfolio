@@ -20,22 +20,17 @@ This portfolio highlights:
    git clone https://github.com/Ducvuive2/Portfolio.git
    \]
 
-2. **Navigate to the project directory**  
-   \[
-   cd Portfolio
-   \]
-
-3. **Install dependencies**  
+2. **Install dependencies**  
    \[
    npm install
    \]
 
-4. **Start the development server**  
+3. **Start the development server**  
    \[
    npm start
    \]
 
-5. **Open in your browser**  
+4. **Open in your browser**  
    Visit [http://localhost:3000](http://localhost:3000) to see the portfolio.
 
 
@@ -51,7 +46,7 @@ Contributions are always welcome! If you'd like to contribute:
 
 ## Contact
 
-- **Portfolio Live**: [https://github.com/your-username/your-project](https://github.com/your-username/your-project)  
+- **Portfolio Live**: [https://dylanapp.io.vn/](https://dylanapp.io.vn/)  
 - **Email**: [duc20062001@gmail.com](mailto:duc20062001@gmail.com)  
 - **LinkedIn**: [Nguyen Vu Van Duc](https://www.linkedin.com/in/nvvduc/)  
 
