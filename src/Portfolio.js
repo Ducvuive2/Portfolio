@@ -1,51 +1,58 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Add shadow to header on scroll
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-        
-        // Show/hide back to top button
-        const backToTopButton = document.getElementById('back-to-top');
-        if (backToTopButton) {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        }
+document.addEventListener('DOMContentLoaded', function () {
+
+  
+  });
+  
+  export function initProject(){
+    initTabs();
+    initCarousel();
+  }
+  
+  function initTabs() {
+    const tabs = document.querySelectorAll('.tabs ul li');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
     });
+  }
+  
+  // Keep track of the scroll event listener
+  let currentScrollListener = null;
 
-    // Back to top button click event
-    // when dom ready
-    const backToTopButton = document.getElementById('back-to-top');
-    if (backToTopButton) {
-        console.log('Back to top button found');
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    } else {
-        console.log('Back to top button not found');
+  function initCarousel(){
+    const skillArea = document.getElementById('skill_area');
+    const scrollIndicator = document.querySelector('.scroll-indicator-progress');
+    
+    if (skillArea && scrollIndicator) {
+      // First, clean up any existing event listener
+      if (currentScrollListener) {
+        skillArea.removeEventListener('scroll', currentScrollListener);
+        currentScrollListener = null;
+      }
+      
+      // Create a new update function
+      const updateScrollIndicator = () => {
+        const scrollLeft = skillArea.scrollLeft;
+        const maxScrollLeft = skillArea.scrollWidth - skillArea.clientWidth;
+        // Prevent division by zero or negative values
+        const scrollPercentage = maxScrollLeft <= 0 ? 0 : (scrollLeft / maxScrollLeft) * 100;
+        scrollIndicator.style.width = `${scrollPercentage}%`;
+      };
+      
+      // Store the reference to the listener
+      currentScrollListener = updateScrollIndicator;
+      
+      // Initial update
+      updateScrollIndicator();
+      
+      // Add scroll event listener
+      skillArea.addEventListener('scroll', currentScrollListener);
     }
-});
+  }
+  export function updateCarousel() {
+    // Small timeout to ensure DOM is updated
+    setTimeout(initCarousel, 50);
+  }
 
-export function initBackToTop() {
-    const backToTopButton = document.getElementById('back-to-top');
-    if (backToTopButton) {
-        console.log('Back to top button found');
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    } else {
-        console.log('Back to top button not found');
-    }
-}
