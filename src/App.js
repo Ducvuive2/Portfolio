@@ -5,7 +5,8 @@ import ResumeSection from './Sections/ResumeSection';
 import ProjectSection from './Sections/ProjectSection';
 import ContactSection from './Sections/ContactSection';
 import { initProject, updateCarousel } from './Portfolio';
-
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 function App() {
   const [activeTab, setActiveTab] = useState('about');
   const [isChangingTab, setIsChangingTab] = useState(false);
@@ -105,6 +106,8 @@ function App() {
           {renderContent()}
         </div>
       </div>
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
