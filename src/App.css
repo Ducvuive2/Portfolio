@@ -118,7 +118,7 @@ main {
 }
 
 h1, h2, h3 {
-  color: var(--text-color);
+  color: var(--primary-variant-light);
 }
 
 h1 {
@@ -164,9 +164,10 @@ h3 {
 :root {
   --primary-color: #2f5496;
   --primary-variant: #ffbb5c; /* Slightly lighter variant */
+  --primary-variant-light: #A2BCE0;
   --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), #ffbb5c);
   --jet: hsl(0, 0%, 22%);
-  --text-color: #e0e0e0;
+  --text-color: #E1E5F2;
 }
 
 .header-section::after {
@@ -752,7 +753,7 @@ hr {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--primary-color);
+  background-color: var(--primary-variant-light);
   opacity: 0.8;
   z-index: 2;
   box-shadow: 0 0 0 4px var(--jet);
@@ -861,7 +862,7 @@ hr {
 
 .project-details a {
   color: #bdc3c7;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .project-details a:hover {
