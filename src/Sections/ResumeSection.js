@@ -84,8 +84,7 @@ function ResumeSection() {
         </div>
       </div>
       
-      {/* Download CV Button */}
-      <div className="download-cv-container">
+      {/* <div className="download-cv-container">
         <button 
           className="download-cv-button" 
           onClick={handleDownloadCV}
@@ -93,7 +92,7 @@ function ResumeSection() {
           <i className="fas fa-download"></i> Download CV
         </button>
       </div>
-        <ToastContainer />
+        <ToastContainer /> */}
       </section>
       
     </div>
