@@ -803,7 +803,6 @@ hr {
 
 .responsibilities li::before {
   content: '•';
-  color: var(--primary-color);
   position: absolute;
   left: -1rem;
 }
