@@ -168,6 +168,7 @@ h3 {
   --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), #ffbb5c);
   --jet: hsl(0, 0%, 22%);
   --text-color: #E1E5F2;
+  --text-color-light: #bdc3c7;
 }
 
 .header-section::after {
@@ -268,7 +269,7 @@ footer {
 .footer-quote {
   margin-top: 1rem;
   font-style: italic;
-  color: #bdc3c7;
+  color: var(----text-color-light);
   font-size: 0.9rem;
 }
 
@@ -608,7 +609,7 @@ hr {
 }
 
 .detail-text p {
-  color: #bdc3c7;
+  color: var(----text-color-light);
   font-size: 0.9rem;
 }
 
@@ -772,7 +773,7 @@ hr {
 
 .company-name {
   font-size: 1rem;
-  color: #bdc3c7;
+  color: var(----text-color-light);
   margin-bottom: 0.2rem;
 }
 
@@ -832,7 +833,7 @@ hr {
 }
 
 .project-info p {
-  color: #bdc3c7;
+  color: var(----text-color-light);
   margin-bottom: 0.5rem;
 }
 
@@ -861,12 +862,12 @@ hr {
 }
 
 .project-details a {
-  color: #bdc3c7;
+  color: var(----text-color-light);
   text-decoration: underline;
 }
 
 .project-details a:hover {
-  color: #bdc3c7;
+  color: var(----text-color-light);
   text-decoration: underline;
 }
 

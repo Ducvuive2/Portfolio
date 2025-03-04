@@ -60,7 +60,9 @@ function App() {
               </div>
               <div className='contact-text'>
                 <label>Email</label>
-                <span>duc20062001@gmail.com</span>
+                <span onClick={() => window.location.href = 'mailto:duc20062001@gmail.com'} style={{ cursor: 'pointer' }}>
+                  duc20062001@gmail.com
+                </span>
               </div>
             </div>
             <div className="contact-item">
