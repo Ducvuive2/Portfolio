@@ -1,5 +1,20 @@
 // ResumeSection.js
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function ResumeSection() {
+  const handleDownloadCV = () => {
+    toast.info("You don't have permission to download CV. Please contact via email for more information.", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  };
+
   return (
     <div className="resume-container">
       <h3 className="header-section">Resume</h3>
@@ -68,7 +83,19 @@ function ResumeSection() {
           </div>
         </div>
       </div>
+      
+      {/* Download CV Button */}
+      <div className="download-cv-container">
+        <button 
+          className="download-cv-button" 
+          onClick={handleDownloadCV}
+        >
+          <i className="fas fa-download"></i> Download CV
+        </button>
+      </div>
+        <ToastContainer />
       </section>
+      
     </div>
   );
 }
