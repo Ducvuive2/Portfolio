@@ -19,6 +19,7 @@
   "scripts": {
     "transpile": "babel src --out-dir dist --extensions \".js,.jsx\"",
     "clean": "rimraf build",
+    "prestart": "npm run transpile && node obfuscate.js",
     "start": "react-scripts start",
     "prebuild": "cross-env NODE_ENV=production node obfuscate.js",
     "build": "npm run clean && npm run prebuild && react-scripts build",
