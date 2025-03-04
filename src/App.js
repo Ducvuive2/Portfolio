@@ -48,7 +48,7 @@ function App() {
       <div className="sidebar">
         <div className="profile-info">
           <a href="./images/profile.webp" target="_blank" rel="noopener noreferrer">
-            <img src="./images/profile_small.svg" alt="Profile" />
+            <img src="/images/profile_small.svg" alt="Profile" />
           </a>
           <h2>Nguyen Vu Van Duc</h2>
           <p className="role">Software Engineer</p>
