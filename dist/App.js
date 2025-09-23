@@ -1,126 +1,147 @@
-import React, { useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import './Portfolio.obfuscated.js';
-import { initBackToTop } from './Portfolio';
+import AboutSection from './Sections/AboutSection';
+import ResumeSection from './Sections/ResumeSection';
+import ProjectSection from './Sections/ProjectSection';
+import ContactSection from './Sections/ContactSection';
+import { initProject, updateCarousel } from './Portfolio';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 function App() {
+  const [activeTab, setActiveTab] = useState('about');
+  const [isChangingTab, setIsChangingTab] = useState(false);
+  const handleTabClick = tab => {
+    if (tab !== activeTab) {
+      setActiveTab(tab);
+      setIsChangingTab(true);
+      setTimeout(() => {
+        setIsChangingTab(false);
+        if (tab === 'about') {
+          setTimeout(updateCarousel, 100);
+        }
+      }, 500);
+    }
+  };
+  const renderContent = () => {
+    switch (activeTab) {
+      case 'about':
+        return /*#__PURE__*/React.createElement(AboutSection, null);
+      case 'resume':
+        return /*#__PURE__*/React.createElement(ResumeSection, null);
+      case 'portfolio':
+        return /*#__PURE__*/React.createElement(ProjectSection, null);
+      case 'contact':
+        return /*#__PURE__*/React.createElement(ContactSection, null);
+      default:
+        return /*#__PURE__*/React.createElement(AboutSection, null);
+    }
+  };
   useEffect(() => {
-    initBackToTop();
+    initProject();
   }, []);
   return /*#__PURE__*/React.createElement("div", {
-    className: "App"
-  }, /*#__PURE__*/React.createElement("header", null, /*#__PURE__*/React.createElement("nav", null, /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "#about"
-  }, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-user"
-  }), " About")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "#education"
-  }, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-graduation-cap"
-  }), " Education")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "#experience"
-  }, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-briefcase"
-  }), " Experience")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "#projects"
-  }, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-code"
-  }), " Projects")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "#contact"
-  }, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-envelope"
-  }), " Contact"))))), /*#__PURE__*/React.createElement("main", null, /*#__PURE__*/React.createElement("section", {
-    id: "about",
-    className: "section"
+    className: "flex justify-between w-2/3 mx-auto mt-15"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "profile-container"
+    className: "sticky flex flex-col items-center w-1/3 mt-5 shadow-2xl bg-background-sidebar text-text rounded-2xl top-5 h-fit p-15"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "profile-image"
+    className: "text-center"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "/images/Dylann.webp",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    title: "Nguyen Vu Van Duc - Software Engineer"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "./images/profile.webp",
-    alt: "Nguyen Vu Van Duc"
-  }))), /*#__PURE__*/React.createElement("h1", {
-    className: "typing-effect"
-  }, "Hello, I'm Nguyen Vu Van Duc \uD83D\uDE4C"), /*#__PURE__*/React.createElement("p", {
-    className: "fade-in-text"
-  }, "Highly motivated Software Engineer with a strong foundation in .NET and front-end skill. Eager to contribute to a dynamic team, continuously learn new technologies, and leverage diverse experience - including working with Shopify - for delivering reliable software solutions.")), /*#__PURE__*/React.createElement("section", {
-    id: "education",
-    className: "section"
-  }, /*#__PURE__*/React.createElement("h2", null, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-graduation-cap"
-  }), " Education"), /*#__PURE__*/React.createElement("div", {
-    className: "education-item"
-  }, /*#__PURE__*/React.createElement("h3", null, "University of Information Technology UIT-HCM"), /*#__PURE__*/React.createElement("p", null, "B.Eng. in Information System - 09/2019 - 11/2023"), /*#__PURE__*/React.createElement("p", null, "GPA: 8.02/10"))), /*#__PURE__*/React.createElement("section", {
-    id: "experience",
-    className: "section"
-  }, /*#__PURE__*/React.createElement("h2", null, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-briefcase"
-  }), " Work Experience"), /*#__PURE__*/React.createElement("div", {
-    className: "education-item"
-  }, /*#__PURE__*/React.createElement("h3", null, "Fullstack Engineer at Spiraledge"), /*#__PURE__*/React.createElement("p", null, "02/2023 - Present"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Contributed to multiple web application projects for SwimOutlet.com"), /*#__PURE__*/React.createElement("li", null, "Developed and maintained features for both public website and internal employee applications"), /*#__PURE__*/React.createElement("li", null, "Developed console tools to automate data updates between internal systems and external platforms"), /*#__PURE__*/React.createElement("li", null, "Worked with Shopify's data structures, including Metafield, Metaobject and Liquid files"))), /*#__PURE__*/React.createElement("div", {
-    className: "education-item"
-  }, /*#__PURE__*/React.createElement("h3", null, "Intern Backend Engineer at NashTech"), /*#__PURE__*/React.createElement("p", null, "10/2022 - 12/2022"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Independently developed an e-commerce website"), /*#__PURE__*/React.createElement("li", null, "Gained experience in building both front-end and back-end components"), /*#__PURE__*/React.createElement("li", null, "Contributed to the development of an asset management system"), /*#__PURE__*/React.createElement("li", null, "Gained experience with Basic Azure DevOps and Unit Testing")))), /*#__PURE__*/React.createElement("section", {
-    id: "projects",
-    className: "section"
-  }, /*#__PURE__*/React.createElement("h2", null, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-code-branch"
-  }), " Projects"), /*#__PURE__*/React.createElement("div", {
-    className: "project-grid"
+    src: "/images/profile.png",
+    alt: "Profile",
+    className: "w-37 h-37 mt-8 rounded-full mb-2.5 border-2 border-white shadow-lg transition-transform duration-300 object-cover cursor-pointer hover:scale-105 mx-auto block"
+  })), /*#__PURE__*/React.createElement("h2", {
+    className: "mt-2.5 text-2xl font-semibold text-primary-variant-light"
+  }, "Nguyen Vu Van Duc"), /*#__PURE__*/React.createElement("p", {
+    className: "bg-background-hover px-2.5 py-1.5 rounded text-sm mb-5"
+  }, "Software Engineer"), /*#__PURE__*/React.createElement("hr", {
+    className: "border-none h-0.5 bg-gray-600 w-11/12 mx-auto my-5"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "mb-8 space-y-4"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "project-card"
-  }, /*#__PURE__*/React.createElement("h3", null, "Chat Realtime"), /*#__PURE__*/React.createElement("div", {
-    className: "video-container"
-  }, /*#__PURE__*/React.createElement("video", {
-    controls: true
-  }, /*#__PURE__*/React.createElement("source", {
-    src: "/videos/VideoDemoChatApp.mkv",
-    type: "video/mp4"
-  }), "Your browser does not support the video tag.")), /*#__PURE__*/React.createElement("p", null, "A real-time chat application built with:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Front-end: HTML, CSS, Bootstrap"), /*#__PURE__*/React.createElement("li", null, "Back-end: ASP.NET Core, LINQ, SignalR"), /*#__PURE__*/React.createElement("li", null, "Database: Azure SQL"), /*#__PURE__*/React.createElement("li", null, "Deployed with Azure Pipelines")), /*#__PURE__*/React.createElement("a", {
-    href: "https://dev.azure.com/19521844/ChatForFun",
-    className: "project-link"
-  }, "View Project")), /*#__PURE__*/React.createElement("div", {
-    className: "project-card"
-  }, /*#__PURE__*/React.createElement("h3", null, "E-commerce Web"), /*#__PURE__*/React.createElement("div", {
-    className: "video-container"
-  }, /*#__PURE__*/React.createElement("video", {
-    controls: true
-  }, /*#__PURE__*/React.createElement("source", {
-    src: "/videos/VideoDemoEcommer.mp4",
-    type: "video/mp4"
-  }), "Your browser does not support the video tag.")), /*#__PURE__*/React.createElement("p", null, "A e-commerce website built with:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Front-end: ReactJS, HTML, CSS, Bootstrap"), /*#__PURE__*/React.createElement("li", null, "Back-end: ASP.NET Core, LINQ, xUnit"), /*#__PURE__*/React.createElement("li", null, "Database: SQL Server")), /*#__PURE__*/React.createElement("a", {
-    href: "https://github.com/ducvuive/E-commerce_Laptop_",
-    className: "project-link"
-  }, "View Project")))), /*#__PURE__*/React.createElement("section", {
-    id: "contact",
-    className: "section"
-  }, /*#__PURE__*/React.createElement("h2", null, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-paper-plane"
-  }), " Contact Me"), /*#__PURE__*/React.createElement("div", {
-    className: "contact-info"
-  }, /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-envelope"
-  }), " Email: ", /*#__PURE__*/React.createElement("a", {
-    href: "mailto:duc20062001@gmail.com"
-  }, "duc20062001@gmail.com")), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-phone"
-  }), " Phone: 0766790335"), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("i", {
-    className: "fab fa-linkedin"
-  }), " LinkedIn: ", /*#__PURE__*/React.createElement("a", {
-    href: "https://www.linkedin.com/in/nvvduc/"
-  }, "Nguyen Vu Van Duc"))))), /*#__PURE__*/React.createElement("footer", null, /*#__PURE__*/React.createElement("div", {
-    className: "footer-content"
+    className: "flex items-center p-4 mb-4 rounded-lg bg-background-content"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "footer-text"
-  }, /*#__PURE__*/React.createElement("p", null, "Made with ", /*#__PURE__*/React.createElement("span", {
-    className: "heart"
-  }, "\u2764\uFE0F"), " by Nguyen Vu Van Duc"), /*#__PURE__*/React.createElement("p", {
-    className: "footer-quote"
-  }, "\"Code is like humor. When you have to explain it, it's bad.\" - Cory House")))), /*#__PURE__*/React.createElement("button", {
-    id: "back-to-top",
-    class: "back-to-top",
-    title: "Back to Top"
+    className: "flex items-center justify-center w-12 h-12 mr-4 bg-gray-800 rounded neumorphic-icon"
   }, /*#__PURE__*/React.createElement("i", {
-    className: "fas fa-arrow-up"
-  })));
+    className: "fas fa-envelope"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-col items-start"
+  }, /*#__PURE__*/React.createElement("label", {
+    className: "mb-1 text-xs uppercase text-text-muted"
+  }, "Email"), /*#__PURE__*/React.createElement("span", {
+    onClick: () => window.location.href = 'mailto:duc20062001@gmail.com',
+    className: "text-sm font-bold cursor-pointer text-text"
+  }, "duc20062001@gmail.com"))), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center p-4 mb-4 rounded-lg bg-background-content"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center justify-center w-12 h-12 mr-4 bg-gray-800 rounded neumorphic-icon"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-phone"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-col items-start"
+  }, /*#__PURE__*/React.createElement("label", {
+    className: "mb-1 text-xs uppercase text-text-muted"
+  }, "Phone"), /*#__PURE__*/React.createElement("span", {
+    className: "text-sm font-bold text-text"
+  }, "+84 766 790 335"))), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center p-4 mb-4 rounded-lg bg-background-content"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center justify-center w-12 h-12 mr-4 bg-gray-800 rounded neumorphic-icon"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-map-marker-alt"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-col items-start"
+  }, /*#__PURE__*/React.createElement("label", {
+    className: "mb-1 text-xs uppercase text-text-muted"
+  }, "Address"), /*#__PURE__*/React.createElement("span", {
+    className: "text-sm font-bold text-text"
+  }, "Bui Dinh Tuy, Ho Chi Minh")))), /*#__PURE__*/React.createElement("div", {
+    className: "flex justify-center gap-4 mb-4"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://github.com/Ducvuive2",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "text-2xl transition-colors duration-300 text-text hover:text-secondary-light"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-github"
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.facebook.com/ducvuive2/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "text-2xl transition-colors duration-300 text-text hover:text-secondary-light"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-facebook"
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.linkedin.com/in/nvvduc/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "text-2xl transition-colors duration-300 text-text hover:text-secondary-light"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-linkedin"
+  }))))), /*#__PURE__*/React.createElement("div", {
+    className: "w-2/3 p-5"
+  }, /*#__PURE__*/React.createElement("nav", {
+    className: "mb-5"
+  }, /*#__PURE__*/React.createElement("ul", {
+    className: "flex justify-around list-none p-2.5 bg-background-content rounded-lg"
+  }, /*#__PURE__*/React.createElement("li", {
+    onClick: () => handleTabClick('about'),
+    className: `cursor-pointer px-5 py-2.5 transition-all duration-300 ${activeTab === 'about' ? 'text-primary' : 'text-text'} text-base font-semibold rounded ${activeTab === 'about' ? 'bg-primary-variant rounded' : ''}`
+  }, "About"), /*#__PURE__*/React.createElement("li", {
+    onClick: () => handleTabClick('resume'),
+    className: `cursor-pointer px-5 py-2.5 transition-all duration-300 ${activeTab === 'resume' ? 'text-primary' : 'text-text'} text-base font-semibold rounded ${activeTab === 'resume' ? 'bg-primary-variant rounded' : ''}`
+  }, "Resume"), /*#__PURE__*/React.createElement("li", {
+    onClick: () => handleTabClick('portfolio'),
+    className: `cursor-pointer px-5 py-2.5 transition-all duration-300 ${activeTab === 'portfolio' ? 'text-primary' : 'text-text'} text-base font-semibold rounded ${activeTab === 'portfolio' ? 'bg-primary-variant rounded' : ''}`
+  }, "Portfolio"), /*#__PURE__*/React.createElement("li", {
+    onClick: () => handleTabClick('contact'),
+    className: `cursor-pointer px-5 py-2.5 transition-all duration-300 ${activeTab === 'contact' ? 'text-primary' : 'text-text'} text-base font-semibold rounded ${activeTab === 'contact' ? 'bg-primary-variant rounded' : ''}`
+  }, "Contact"))), /*#__PURE__*/React.createElement("div", {
+    className: `bg-background-content rounded-2xl shadow-2xl p-5 mt-5 ${isChangingTab ? 'animate-zoom-out' : ''}`
+  }, renderContent())), /*#__PURE__*/React.createElement(Analytics, null), /*#__PURE__*/React.createElement(SpeedInsights, null));
 }
 export default App;
