@@ -9,7 +9,7 @@ function AboutSection() {
         <section id="about" className="p-8 shadow-2xl bg-background-card rounded-2xl">
             <h1 className="text-3xl font-bold text-center typing-effect sm:text-4xl text-primary-variant-light">Hello, I'm Nguyen Vu Van Duc 🙌</h1>
             <p className="fade-in-text text-text">
-                Highly motivated Software Engineer with a strong foundation in .NET and front-end skill. Eager to contribute to a dynamic team, continuously learn new technologies, and leverage diverse experience - including working with Shopify - for delivering reliable software solutions.
+                Full-stack Software Engineer with experience in banking, healthcare and e-commerce systems using ASP.NET and modern frontend technologies. Skilled in building scalable web applications, real-time systems and cloud-based deployments with AWS and Docker.
             </p>
         </section>
         <div className="mt-6">
@@ -22,7 +22,7 @@ function AboutSection() {
                     <div>
                         <span className="block text-lg font-bold text-text">Backend Development</span>
                         <p>
-                        Building robust server-side logic and efficient database solutions with ASP.NET, C#, and SQL Server to applications.
+                        Building scalable APIs and server-side logic with ASP.NET Core, NodeJS, SignalR, PostgreSQL and Redis.
                         </p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ function AboutSection() {
                     <div>
                         <span className="block text-lg font-bold text-text">Web Development</span>
                         <p>
-                            Crafting responsive, user-friendly interfaces using HTML, CSS, and React.js for dynamic eCommerce platforms.
+                            Crafting responsive interfaces with ReactJS, Next.js, TypeScript, Angular and Tailwind CSS.
                         </p>
                     </div>
                 </div>
@@ -42,20 +42,20 @@ function AboutSection() {
                         <i className="text-xl fas fa-cogs text-primary-variant"></i>
                     </div>
                     <div>
-                        <span className="block text-lg font-bold text-text">API Integration & Automation</span>
+                        <span className="block text-lg font-bold text-text">Real-time Systems</span>
                         <p>
-                            Seamlessly integrating third-party APIs and automating data workflows.
+                            Implementing real-time updates and notification flows using SignalR for queue management and live applications.
                         </p>
                     </div>
                 </div>
                 <div className="flex items-center p-5 transition-transform border shadow-2xl bg-background-card rounded-xl border-background-hover hover:-translate-y-1">
                     <div className="flex items-center justify-center p-4 mr-4 rounded bg-background-lightDark">
-                        <i className="text-xl fa-brands fa-shopify text-primary-variant"></i>
+                        <i className="text-xl fas fa-cloud text-primary-variant"></i>
                     </div>
                     <div>
-                        <span className="block text-lg font-bold text-text">Shopify App</span>
+                        <span className="block text-lg font-bold text-text">Cloud & DevOps</span>
                         <p>
-                            Enhancing Shopify stores using Liquid, Metafields, and Shopify API.
+                            Deploying and maintaining applications on AWS with Docker, collaborating with DevOps teams for production releases.
                         </p>
                     </div>
                 </div>
@@ -71,10 +71,34 @@ function AboutSection() {
                     <img src="./images/shopify.png" alt="Shopify" />
                 </div>
                 <div className="skill-item">
+                    <img src="./images/reactjs.png" alt="React.js" />
+                </div>
+                <div className="skill-item">
+                    <img src="./images/aws.png" alt="AWS" />
+                </div>
+                <div className="skill-item">
                     <img src="./images/sql.png" alt="SQL" />
                 </div>
                 <div className="skill-item">
-                    <img src="./images/reactjs.png" alt="React.js" />
+                    <img src="./images/signalR.png" alt="SignalR" />
+                </div>
+                <div className="skill-item">
+                    <img src="./images/nodejs.png" alt="Node.js" />
+                </div>
+                <div className="skill-item">
+                    <img src="./images/nextjs.png" alt="Next.js" />
+                </div>
+                <div className="skill-item">
+                    <img src="./images/ts.png" alt="TypeScript" />
+                </div>
+                <div className="skill-item">
+                    <img src="./images/postgreSQL.png" alt="PostgreSQL" />
+                </div>
+                <div className="skill-item">
+                    <img src="./images/redis.png" alt="Redis" />
+                </div>
+                <div className="skill-item">
+                    <img src="./images/maui.png" alt=".NET MAUI" />
                 </div>
                 <div className="skill-item">
                     <img src="./images/postman.png" alt="Postman" />
@@ -82,8 +106,30 @@ function AboutSection() {
             </section>
             <div className="scroll-indicator-container">
                 <div className="scroll-indicator-track">
-                    <div className="scroll-indicator-progress"></div>
+                    <div className="scroll-indicator-thumb" aria-hidden="true"></div>
                 </div>
+            </div>
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="p-4 rounded-xl bg-background-card">
+                <p className="mb-1 text-sm font-semibold text-primary-variant">Front-end</p>
+                <p className="text-text">ReactJS, Next.js, TypeScript, Angular, Tailwind CSS, JQuery, Shopify Liquid</p>
+            </div>
+            <div className="p-4 rounded-xl bg-background-card">
+                <p className="mb-1 text-sm font-semibold text-primary-variant">Back-end</p>
+                <p className="text-text">ASP.NET Core, NodeJS, SignalR</p>
+            </div>
+            <div className="p-4 rounded-xl bg-background-card">
+                <p className="mb-1 text-sm font-semibold text-primary-variant">Mobile</p>
+                <p className="text-text">.NET MAUI</p>
+            </div>
+            <div className="p-4 rounded-xl bg-background-card">
+                <p className="mb-1 text-sm font-semibold text-primary-variant">Cloud & DevOps</p>
+                <p className="text-text">Docker, AWS, Azure</p>
+            </div>
+            <div className="p-4 rounded-xl bg-background-card md:col-span-2">
+                <p className="mb-1 text-sm font-semibold text-primary-variant">Database</p>
+                <p className="text-text">MS SQL Server, PostgreSQL, MySQL, Redis</p>
             </div>
         </div>
       </div>

@@ -1,18 +1,5 @@
 // ResumeSection.js
-import { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 function ResumeSection() {
-  const handleDownloadCV = () => {
-    toast.info("You don't have permission to download CV. Please contact via email for more information.", {
-      position: "top-center",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true
-    });
-  };
   return /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col"
   }, /*#__PURE__*/React.createElement("div", {
@@ -44,11 +31,11 @@ function ResumeSection() {
     className: "pb-4 pl-10"
   }, /*#__PURE__*/React.createElement("h4", {
     className: "mb-2 text-xl font-semibold text-text"
-  }, "University of Information Technology UIT-HCM"), /*#__PURE__*/React.createElement("p", {
+  }, "University of Information Technology"), /*#__PURE__*/React.createElement("p", {
     className: "mb-1 text-sm font-semibold text-primary-variant"
-  }, "Sep 2019 - Dec 2023"), /*#__PURE__*/React.createElement("p", {
+  }, "Sep 2019 - April 2023"), /*#__PURE__*/React.createElement("p", {
     className: "text-text"
-  }, "B.Eng. in Information System"), /*#__PURE__*/React.createElement("p", {
+  }, "Bachelor's Degree in Information System"), /*#__PURE__*/React.createElement("p", {
     className: "text-text"
   }, "GPA: 8.02/10"))))), /*#__PURE__*/React.createElement("div", {
     className: "mb-8"
@@ -61,53 +48,97 @@ function ResumeSection() {
   }), " Experience")), /*#__PURE__*/React.createElement("div", {
     className: "relative"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "relative pb-4 pl-8  before:content-[''] before:absolute before:h-full before:top-4 before:bottom-0 before:w-0.5 before:bg-gray-600 before:left-7"
+    className: "relative before:content-[''] before:absolute before:h-full before:top-4 before:bottom-0 before:w-0.5 before:bg-gray-600 before:left-7"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "absolute z-10 w-3 h-3  ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
+    className: "relative pb-4 pl-8"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "absolute z-10 w-3 h-3 ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "pb-4 pl-10"
+  }, /*#__PURE__*/React.createElement("h4", {
+    className: "mb-2 text-xl font-semibold text-text"
+  }, "Full-stack Software Engineer"), /*#__PURE__*/React.createElement("p", {
+    className: "mb-1 text-base text-text-muted"
+  }, "Vinsmart Future, Ho Chi Minh, Viet Nam"), /*#__PURE__*/React.createElement("p", {
+    className: "mb-1 text-sm font-semibold text-primary-variant"
+  }, "Dec 2025 - Present"), /*#__PURE__*/React.createElement("p", {
+    className: "mb-2 text-sm text-gray-400"
+  }, "Project: Kiosk/QMS, Vinmec.com"), /*#__PURE__*/React.createElement("ul", {
+    className: "pl-6 my-4"
+  }, /*#__PURE__*/React.createElement("li", {
+    className: "relative mb-2 text-text"
+  }, "Designed and optimized database schemas and APIs for queue management systems."), /*#__PURE__*/React.createElement("li", {
+    className: "relative mb-2 text-text"
+  }, "Implemented real-time queue updates and notification flows using SignalR."), /*#__PURE__*/React.createElement("li", {
+    className: "relative mb-2 text-text"
+  }, "Collaborated with DevOps teams for AWS/Docker deployments.")), /*#__PURE__*/React.createElement("p", {
+    className: "mt-2 text-sm italic text-gray-400"
+  }, "Technologies: ASP.NET, ReactJS, Next.js, TypeScript, Postgresql, SignalR, AWS, Docker"))), /*#__PURE__*/React.createElement("div", {
+    className: "relative pb-4 pl-8"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "absolute z-10 w-3 h-3 ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
   }), /*#__PURE__*/React.createElement("div", {
     className: "pb-4 pl-10"
   }, /*#__PURE__*/React.createElement("h4", {
     className: "mb-2 text-xl font-semibold text-text"
   }, "Full-stack Web Developer"), /*#__PURE__*/React.createElement("p", {
     className: "mb-1 text-base text-text-muted"
-  }, "Spiraledge Vietnam, Ho Chi Minh, Vietnam"), /*#__PURE__*/React.createElement("p", {
+  }, "International Financial Systems, Ho Chi Minh, Viet Nam"), /*#__PURE__*/React.createElement("p", {
     className: "mb-1 text-sm font-semibold text-primary-variant"
-  }, "Feb 2023 - Present"), /*#__PURE__*/React.createElement("p", {
-    className: "mb-4 text-sm text-gray-400"
-  }, "Ho Chi Minh, Vietnam"), /*#__PURE__*/React.createElement("ul", {
+  }, "Apr 2025 - Nov 2025"), /*#__PURE__*/React.createElement("p", {
+    className: "mb-2 text-sm text-gray-400"
+  }, "Project: Banking System"), /*#__PURE__*/React.createElement("ul", {
     className: "pl-6 my-4"
   }, /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Developed and maintained multiple web application projects for SwimOutlet.com, ensuring compliance with coding standards and company processes."), /*#__PURE__*/React.createElement("li", {
+  }, "Implemented and maintained banking features for web and mobile systems."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Created console tools to automate data updates between internal systems and external platforms."), /*#__PURE__*/React.createElement("li", {
+  }, "Investigated and resolved production issues by analyzing logs, tracing data flows and debugging backend services."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Collaborated with cross-functional teams and BA team to deliver high-quality solutions while ensuring process compliance.")), /*#__PURE__*/React.createElement("p", {
+  }, "Improved application performance and response time for critical user operations.")), /*#__PURE__*/React.createElement("p", {
     className: "mt-2 text-sm italic text-gray-400"
-  }, "Technologies: ASP.NET, MS SQL Server, Shopify Liquid, ReactJS, NodeJS, jQuery"))), /*#__PURE__*/React.createElement("div", {
+  }, "Technologies: ASP.NET, MS SQL Server, .NET MAUI, SignalR, Redis")))), /*#__PURE__*/React.createElement("div", {
     className: "relative pb-4 pl-8"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "absolute z-10 w-3 h-3  ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
+    className: "absolute z-10 w-3 h-3 ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
   }), /*#__PURE__*/React.createElement("div", {
     className: "pb-4 pl-10"
   }, /*#__PURE__*/React.createElement("h4", {
     className: "mb-2 text-xl font-semibold text-text"
-  }, "Intern Backend Engineer"), /*#__PURE__*/React.createElement("p", {
+  }, "Full-stack Developer"), /*#__PURE__*/React.createElement("p", {
     className: "mb-1 text-base text-text-muted"
-  }, "NashTech Vietnam"), /*#__PURE__*/React.createElement("p", {
+  }, "Spiraledge VietNam, Ho Chi Minh, Viet Nam"), /*#__PURE__*/React.createElement("p", {
     className: "mb-1 text-sm font-semibold text-primary-variant"
-  }, "Oct 2022 - Dec 2022"), /*#__PURE__*/React.createElement("p", {
-    className: "mb-4 text-sm text-gray-400"
-  }, "Ho Chi Minh, Vietnam"), /*#__PURE__*/React.createElement("ul", {
+  }, "Feb 2023 - Apr 2025"), /*#__PURE__*/React.createElement("p", {
+    className: "mb-2 text-sm text-gray-400"
+  }, "Project: SwimOutlet"), /*#__PURE__*/React.createElement("ul", {
     className: "pl-6 my-4"
   }, /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Independently developed an e-commerce website, handling both front-end and back-end development along with database integration."), /*#__PURE__*/React.createElement("li", {
+  }, "Developed and maintained multiple web application projects for SwimOutlet, ensuring compliance with coding standards and company processes."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Contributed to the development of an asset management system, following detailed design specifications and process standards."), /*#__PURE__*/React.createElement("li", {
+  }, "Optimized performance by implementing code-splitting, lazy loading."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Gained practical experience with Azure DevOps, focusing on streamlined deployment and project management practices.")), /*#__PURE__*/React.createElement("p", {
+  }, "Automated data synchronization between internal systems and external platforms using custom-built console tools.")), /*#__PURE__*/React.createElement("p", {
     className: "mt-2 text-sm italic text-gray-400"
-  }, "Technologies: ASP.NET, MS SQL Server, xUnit, ReactJS, Azure Basic"))))))));
+  }, "Technologies: ASP.NET, MS SQL Server, Shopify Liquid, ReactJS, NodeJS, Jquery"))))), /*#__PURE__*/React.createElement("div", {
+    className: "mb-8"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "relative pb-4 pl-0 before:content-[''] before:absolute before:h-full before:top-4 before:bottom-0 before:w-0.5 before:bg-gray-600 before:left-7"
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "flex items-center mb-6 text-2xl font-semibold text-primary-variant-light"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "p-4 mr-4 text-xl z-10 bg-gray-800 rounded fas fa-award text-[1.5rem] !text-primary neumorphic-icon"
+  }), " Award & Certificate")), /*#__PURE__*/React.createElement("div", {
+    className: "relative"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "relative pb-4 pl-8"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "absolute z-10 w-3 h-3 ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "pb-4 pl-10"
+  }, /*#__PURE__*/React.createElement("ul", {
+    className: "pl-6 my-2 space-y-3 list-disc text-text"
+  }, /*#__PURE__*/React.createElement("li", null, "Academic Performance Scholarship - Faculty of Information System (Top 10) - Mar 2021."), /*#__PURE__*/React.createElement("li", null, "TOEIC 4 Skills (LR 750 / SW 260).")))))))));
 }
 export default ResumeSection;

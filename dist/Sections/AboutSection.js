@@ -15,45 +15,45 @@ function AboutSection() {
     className: "text-3xl font-bold text-center typing-effect sm:text-4xl text-primary-variant-light"
   }, "Hello, I'm Nguyen Vu Van Duc \uD83D\uDE4C"), /*#__PURE__*/React.createElement("p", {
     className: "fade-in-text text-text"
-  }, "Highly motivated Software Engineer with a strong foundation in .NET and front-end skill. Eager to contribute to a dynamic team, continuously learn new technologies, and leverage diverse experience - including working with Shopify - for delivering reliable software solutions.")), /*#__PURE__*/React.createElement("div", {
+  }, "Full-stack Software Engineer with experience in banking, healthcare and e-commerce systems using ASP.NET and modern frontend technologies. Skilled in building scalable web applications, real-time systems and cloud-based deployments with AWS and Docker.")), /*#__PURE__*/React.createElement("div", {
     className: "mt-6"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "mb-4 text-2xl font-semibold text-primary-variant-light"
   }, "What I'm doing"), /*#__PURE__*/React.createElement("div", {
     className: "grid grid-cols-1 md:grid-cols-2 gap-8 p-2 bg-[#1a1a1a] rounded-2xl mb-8"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center bg-[#262626] p-5 rounded-xl shadow-2xl border border-[#333] transition-transform hover:-translate-y-1"
+    className: "flex items-center p-5 transition-transform border shadow-2xl bg-background-card rounded-xl border-background-hover hover:-translate-y-1"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "p-4 rounded bg-[#1e1e1e] mr-4 flex items-center justify-center"
+    className: "flex items-center justify-center p-4 mr-4 rounded bg-background-lightDark"
   }, /*#__PURE__*/React.createElement("i", {
     className: "text-xl fas fa-server text-primary-variant"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
     className: "block text-lg font-bold text-text"
-  }, "Backend Development"), /*#__PURE__*/React.createElement("p", null, "Building robust server-side logic and efficient database solutions with ASP.NET, C#, and SQL Server to applications."))), /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center bg-[#262626] p-5 rounded-xl shadow-2xl border border-[#333] transition-transform hover:-translate-y-1"
+  }, "Backend Development"), /*#__PURE__*/React.createElement("p", null, "Building scalable APIs and server-side logic with ASP.NET Core, NodeJS, SignalR, PostgreSQL and Redis."))), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center p-5 transition-transform border shadow-2xl bg-background-card rounded-xl border-background-hover hover:-translate-y-1"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "p-4 rounded bg-[#1e1e1e] mr-4 flex items-center justify-center"
+    className: "flex items-center justify-center p-4 mr-4 rounded bg-background-lightDark"
   }, /*#__PURE__*/React.createElement("i", {
     className: "text-xl fas fa-desktop text-primary-variant"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
     className: "block text-lg font-bold text-text"
-  }, "Web Development"), /*#__PURE__*/React.createElement("p", null, "Crafting responsive, user-friendly interfaces using HTML, CSS, and React.js for dynamic eCommerce platforms."))), /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center bg-[#262626] p-5 rounded-xl shadow-2xl border border-[#333] transition-transform hover:-translate-y-1"
+  }, "Web Development"), /*#__PURE__*/React.createElement("p", null, "Crafting responsive interfaces with ReactJS, Next.js, TypeScript, Angular and Tailwind CSS."))), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center p-5 transition-transform border shadow-2xl bg-background-card rounded-xl border-background-hover hover:-translate-y-1"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "p-4 rounded bg-[#1e1e1e] mr-4 flex items-center justify-center"
+    className: "flex items-center justify-center p-4 mr-4 rounded bg-background-lightDark"
   }, /*#__PURE__*/React.createElement("i", {
     className: "text-xl fas fa-cogs text-primary-variant"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
     className: "block text-lg font-bold text-text"
-  }, "API Integration & Automation"), /*#__PURE__*/React.createElement("p", null, "Seamlessly integrating third-party APIs and automating data workflows."))), /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center bg-[#262626] p-5 rounded-xl shadow-2xl border border-[#333] transition-transform hover:-translate-y-1"
+  }, "Real-time Systems"), /*#__PURE__*/React.createElement("p", null, "Implementing real-time updates and notification flows using SignalR for queue management and live applications."))), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center p-5 transition-transform border shadow-2xl bg-background-card rounded-xl border-background-hover hover:-translate-y-1"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "p-4 rounded bg-[#1e1e1e] mr-4 flex items-center justify-center"
+    className: "flex items-center justify-center p-4 mr-4 rounded bg-background-lightDark"
   }, /*#__PURE__*/React.createElement("i", {
-    className: "text-xl fa-brands fa-shopify text-primary-variant"
+    className: "text-xl fas fa-cloud text-primary-variant"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
     className: "block text-lg font-bold text-text"
-  }, "Shopify App"), /*#__PURE__*/React.createElement("p", null, "Enhancing Shopify stores using Liquid, Metafields, and Shopify API."))))), /*#__PURE__*/React.createElement("h3", {
+  }, "Cloud & DevOps"), /*#__PURE__*/React.createElement("p", null, "Deploying and maintaining applications on AWS with Docker, collaborating with DevOps teams for production releases."))))), /*#__PURE__*/React.createElement("h3", {
     className: "mb-4 text-2xl font-semibold text-primary-variant-light"
   }, "My Skills"), /*#__PURE__*/React.createElement("div", {
     className: "relative mb-8"
@@ -73,13 +73,53 @@ function AboutSection() {
   })), /*#__PURE__*/React.createElement("div", {
     className: "skill-item"
   }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/reactjs.png",
+    alt: "React.js"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/aws.png",
+    alt: "AWS"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/nextjs.png",
+    alt: "Next.js"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/nodejs.png",
+    alt: "Node.js"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/ts.png",
+    alt: "TypeScript"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
     src: "./images/sql.png",
     alt: "SQL"
   })), /*#__PURE__*/React.createElement("div", {
     className: "skill-item"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "./images/reactjs.png",
-    alt: "React.js"
+    src: "./images/postgreSQL.png",
+    alt: "PostgreSQL"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/redis.png",
+    alt: "Redis"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/signalR.png",
+    alt: "SignalR"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "skill-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "./images/maui.png",
+    alt: ".NET MAUI"
   })), /*#__PURE__*/React.createElement("div", {
     className: "skill-item"
   }, /*#__PURE__*/React.createElement("img", {
@@ -90,7 +130,40 @@ function AboutSection() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "scroll-indicator-track"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "scroll-indicator-progress"
-  })))));
+    className: "scroll-indicator-thumb",
+    "aria-hidden": "true"
+  })))), /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-cols-1 gap-4 md:grid-cols-2"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "p-4 rounded-xl bg-background-card"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "mb-1 text-sm font-semibold text-primary-variant"
+  }, "Front-end"), /*#__PURE__*/React.createElement("p", {
+    className: "text-text"
+  }, "ReactJS, Next.js, TypeScript, Angular, Tailwind CSS, JQuery, Shopify Liquid")), /*#__PURE__*/React.createElement("div", {
+    className: "p-4 rounded-xl bg-background-card"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "mb-1 text-sm font-semibold text-primary-variant"
+  }, "Back-end"), /*#__PURE__*/React.createElement("p", {
+    className: "text-text"
+  }, "ASP.NET Core, NodeJS, SignalR")), /*#__PURE__*/React.createElement("div", {
+    className: "p-4 rounded-xl bg-background-card"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "mb-1 text-sm font-semibold text-primary-variant"
+  }, "Database"), /*#__PURE__*/React.createElement("p", {
+    className: "text-text"
+  }, "MS SQL Server, PostgreSQL, MySQL, Redis")), /*#__PURE__*/React.createElement("div", {
+    className: "p-4 rounded-xl bg-background-card"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "mb-1 text-sm font-semibold text-primary-variant"
+  }, "Cloud & DevOps"), /*#__PURE__*/React.createElement("p", {
+    className: "text-text"
+  }, "Docker, AWS")), /*#__PURE__*/React.createElement("div", {
+    className: "p-4 rounded-xl bg-background-card"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "mb-1 text-sm font-semibold text-primary-variant"
+  }, "Mobile"), /*#__PURE__*/React.createElement("p", {
+    className: "text-text"
+  }, ".NET MAUI"))));
 }
 export default AboutSection;

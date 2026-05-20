@@ -49,7 +49,7 @@ function App() {
     href: "/images/Dylann.webp",
     target: "_blank",
     rel: "noopener noreferrer",
-    title: "Nguyen Vu Van Duc - Software Engineer"
+    title: "Nguyen Vu Van Duc - Full-stack Software Engineer"
   }, /*#__PURE__*/React.createElement("img", {
     src: "/images/profile.png",
     alt: "Profile",
@@ -57,8 +57,8 @@ function App() {
   })), /*#__PURE__*/React.createElement("h2", {
     className: "mt-2.5 text-2xl font-semibold text-primary-variant-light"
   }, "Nguyen Vu Van Duc"), /*#__PURE__*/React.createElement("p", {
-    className: "bg-background-hover px-2.5 py-1.5 rounded text-sm mb-5"
-  }, "Software Engineer"), /*#__PURE__*/React.createElement("hr", {
+    className: "bg-background-hover px-2.5 py-1.5 rounded text-sm mb-5 mt-2"
+  }, "Full-stack Software Engineer"), /*#__PURE__*/React.createElement("hr", {
     className: "border-none h-0.5 bg-gray-600 w-11/12 mx-auto my-5"
   }), /*#__PURE__*/React.createElement("div", {
     className: "mb-8 space-y-4"
