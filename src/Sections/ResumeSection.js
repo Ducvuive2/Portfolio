@@ -46,11 +46,11 @@ function ResumeSection() {
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Dec 2025 - Present</p>
                 <p className="mb-2 text-sm text-gray-400">Project: Kiosk/QMS, Vinmec.com</p>
                 <ul className="pl-6 my-4">
-                  <li className="relative mb-2 text-text">Designed and optimized database schemas and APIs for queue management systems.</li>
-                  <li className="relative mb-2 text-text">Implemented real-time queue updates and notification flows using SignalR.</li>
-                  <li className="relative mb-2 text-text">Collaborated with DevOps teams for AWS/Docker deployments.</li>
+                  <li className="relative mb-2 text-text">Designed and optimized database schemas and APIs for hospital queue-management workflows using ASP.NET Core and PostgreSQL.</li>
+                  <li className="relative mb-2 text-text">Developed real-time queue updates and notification flows with SignalR for kiosk and service-counter operations.</li>
+                  <li className="relative mb-2 text-text">Collaborated with DevOps teams to support scalable deployment architecture using AWS and Docker.</li>
                 </ul>
-                <p className="mt-2 text-sm italic text-gray-400">Technologies: ASP.NET, ReactJS, Next.js, TypeScript, Postgresql, SignalR, AWS, Docker</p>
+                <p className="mt-2 text-sm italic text-gray-400">Technologies: ASP.NET Core, React, TypeScript, PostgreSQL, SignalR, AWS, Docker</p>
                 </div>
               </div>
 
@@ -62,11 +62,11 @@ function ResumeSection() {
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Apr 2025 - Nov 2025</p>
                 <p className="mb-2 text-sm text-gray-400">Project: Banking System</p>
                 <ul className="pl-6 my-4">
-                  <li className="relative mb-2 text-text">Implemented and maintained banking features for web and mobile systems.</li>
-                  <li className="relative mb-2 text-text">Investigated and resolved production issues by analyzing logs, tracing data flows and debugging backend services.</li>
-                  <li className="relative mb-2 text-text">Improved application performance and response time for critical user operations.</li>
+                  <li className="relative mb-2 text-text">Delivered banking features across web and .NET MAUI mobile systems, covering business logic, API integration and data validation.</li>
+                  <li className="relative mb-2 text-text">Investigated and resolved production issues through application log tracking and data-flow tracing; secured sensitive configuration values with ASP.NET Core Data Protection.</li>
+                  <li className="relative mb-2 text-text">Optimized critical banking transaction flows, reducing transaction response time to under 1.5 seconds.</li>
                 </ul>
-                <p className="mt-2 text-sm italic text-gray-400">Technologies: ASP.NET, MS SQL Server, .NET MAUI, SignalR, Redis</p>
+                <p className="mt-2 text-sm italic text-gray-400">Technologies: ASP.NET Core, EF Core, MS SQL Server, .NET MAUI, SignalR, Redis, xUnit</p>
                 </div>
               </div>
             </div>
@@ -74,16 +74,16 @@ function ResumeSection() {
             <div className="relative pb-4 pl-8">
               <div className="absolute z-10 w-3 h-3 ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"></div>
               <div className="pb-4 pl-10">
-                <h4 className="mb-2 text-xl font-semibold text-text">Full-stack Developer</h4>
+                <h4 className="mb-2 text-xl font-semibold text-text">Backend Developer</h4>
                 <p className="mb-1 text-base text-text-muted">Spiraledge VietNam, Ho Chi Minh, Viet Nam</p>
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Feb 2023 - Apr 2025</p>
                 <p className="mb-2 text-sm text-gray-400">Project: SwimOutlet</p>
                 <ul className="pl-6 my-4">
-                  <li className="relative mb-2 text-text">Developed and maintained multiple web application projects for SwimOutlet, ensuring compliance with coding standards and company processes.</li>
-                  <li className="relative mb-2 text-text">Optimized performance by implementing code-splitting, lazy loading.</li>
+                  <li className="relative mb-2 text-text">Developed and maintained multiple e-commerce web application modules for SwimOutlet, supporting storefront and internal business workflows.</li>
+                  <li className="relative mb-2 text-text">Improved frontend performance by applying code-splitting, lazy loading and reusable React components.</li>
                   <li className="relative mb-2 text-text">Automated data synchronization between internal systems and external platforms using custom-built console tools.</li>
                 </ul>
-                <p className="mt-2 text-sm italic text-gray-400">Technologies: ASP.NET, MS SQL Server, Shopify Liquid, ReactJS, NodeJS, Jquery</p>
+                <p className="mt-2 text-sm italic text-gray-400">Technologies: ASP.NET Core, MS SQL Server, Shopify Liquid, React, Node.js, jQuery</p>
               </div>
             </div>
           </div>

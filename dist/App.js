@@ -49,7 +49,7 @@ function App() {
     href: "/images/Dylann.webp",
     target: "_blank",
     rel: "noopener noreferrer",
-    title: "Nguyen Vu Van Duc - Full-stack Software Engineer"
+    title: "Nguyen Vu Van Duc - Full-stack .NET Engineer"
   }, /*#__PURE__*/React.createElement("img", {
     src: "/images/profile.png",
     alt: "Profile",
@@ -58,7 +58,7 @@ function App() {
     className: "mt-2.5 text-2xl font-semibold text-primary-variant-light"
   }, "Nguyen Vu Van Duc"), /*#__PURE__*/React.createElement("p", {
     className: "bg-background-hover px-2.5 py-1.5 rounded text-sm mb-5 mt-2"
-  }, "Full-stack Software Engineer"), /*#__PURE__*/React.createElement("hr", {
+  }, "Full-stack .NET Engineer"), /*#__PURE__*/React.createElement("hr", {
     className: "border-none h-0.5 bg-gray-600 w-11/12 mx-auto my-5"
   }), /*#__PURE__*/React.createElement("div", {
     className: "mb-8 space-y-4"
@@ -76,6 +76,21 @@ function App() {
     onClick: () => window.location.href = 'mailto:duc20062001@gmail.com',
     className: "text-sm font-bold cursor-pointer text-text"
   }, "duc20062001@gmail.com"))), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center p-4 mb-4 rounded-lg bg-background-content"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center justify-center w-12 h-12 mr-4 bg-gray-800 rounded neumorphic-icon"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-globe"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-col items-start"
+  }, /*#__PURE__*/React.createElement("label", {
+    className: "mb-1 text-xs uppercase text-text-muted"
+  }, "Website"), /*#__PURE__*/React.createElement("a", {
+    href: "https://dylanapp.io.vn/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "text-sm font-bold cursor-pointer text-text"
+  }, "dylanapp.io.vn"))), /*#__PURE__*/React.createElement("div", {
     className: "flex items-center p-4 mb-4 rounded-lg bg-background-content"
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center justify-center w-12 h-12 mr-4 bg-gray-800 rounded neumorphic-icon"

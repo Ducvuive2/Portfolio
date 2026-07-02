@@ -67,13 +67,13 @@ function ResumeSection() {
     className: "pl-6 my-4"
   }, /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Designed and optimized database schemas and APIs for queue management systems."), /*#__PURE__*/React.createElement("li", {
+  }, "Designed and optimized database schemas and APIs for hospital queue-management workflows using ASP.NET Core and PostgreSQL."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Implemented real-time queue updates and notification flows using SignalR."), /*#__PURE__*/React.createElement("li", {
+  }, "Developed real-time queue updates and notification flows with SignalR for kiosk and service-counter operations."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Collaborated with DevOps teams for AWS/Docker deployments.")), /*#__PURE__*/React.createElement("p", {
+  }, "Collaborated with DevOps teams to support scalable deployment architecture using AWS and Docker.")), /*#__PURE__*/React.createElement("p", {
     className: "mt-2 text-sm italic text-gray-400"
-  }, "Technologies: ASP.NET, ReactJS, Next.js, TypeScript, Postgresql, SignalR, AWS, Docker"))), /*#__PURE__*/React.createElement("div", {
+  }, "Technologies: ASP.NET Core, React, TypeScript, PostgreSQL, SignalR, AWS, Docker"))), /*#__PURE__*/React.createElement("div", {
     className: "relative pb-4 pl-8"
   }, /*#__PURE__*/React.createElement("div", {
     className: "absolute z-10 w-3 h-3 ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
@@ -91,13 +91,13 @@ function ResumeSection() {
     className: "pl-6 my-4"
   }, /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Implemented and maintained banking features for web and mobile systems."), /*#__PURE__*/React.createElement("li", {
+  }, "Delivered banking features across web and .NET MAUI mobile systems, covering business logic, API integration and data validation."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Investigated and resolved production issues by analyzing logs, tracing data flows and debugging backend services."), /*#__PURE__*/React.createElement("li", {
+  }, "Investigated and resolved production issues through application log tracking and data-flow tracing; secured sensitive configuration values with ASP.NET Core Data Protection."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Improved application performance and response time for critical user operations.")), /*#__PURE__*/React.createElement("p", {
+  }, "Optimized critical banking transaction flows, reducing transaction response time to under 1.5 seconds.")), /*#__PURE__*/React.createElement("p", {
     className: "mt-2 text-sm italic text-gray-400"
-  }, "Technologies: ASP.NET, MS SQL Server, .NET MAUI, SignalR, Redis")))), /*#__PURE__*/React.createElement("div", {
+  }, "Technologies: ASP.NET Core, EF Core, MS SQL Server, .NET MAUI, SignalR, Redis, xUnit")))), /*#__PURE__*/React.createElement("div", {
     className: "relative pb-4 pl-8"
   }, /*#__PURE__*/React.createElement("div", {
     className: "absolute z-10 w-3 h-3 ml-[-4px] border-4 rounded-full shadow-lg left-7 top-2 bg-primary-variant-light opacity-80 border-jet"
@@ -105,7 +105,7 @@ function ResumeSection() {
     className: "pb-4 pl-10"
   }, /*#__PURE__*/React.createElement("h4", {
     className: "mb-2 text-xl font-semibold text-text"
-  }, "Full-stack Developer"), /*#__PURE__*/React.createElement("p", {
+  }, "Backend Developer"), /*#__PURE__*/React.createElement("p", {
     className: "mb-1 text-base text-text-muted"
   }, "Spiraledge VietNam, Ho Chi Minh, Viet Nam"), /*#__PURE__*/React.createElement("p", {
     className: "mb-1 text-sm font-semibold text-primary-variant"
@@ -115,13 +115,13 @@ function ResumeSection() {
     className: "pl-6 my-4"
   }, /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Developed and maintained multiple web application projects for SwimOutlet, ensuring compliance with coding standards and company processes."), /*#__PURE__*/React.createElement("li", {
+  }, "Developed and maintained multiple e-commerce web application modules for SwimOutlet, supporting storefront and internal business workflows."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
-  }, "Optimized performance by implementing code-splitting, lazy loading."), /*#__PURE__*/React.createElement("li", {
+  }, "Improved frontend performance by applying code-splitting, lazy loading and reusable React components."), /*#__PURE__*/React.createElement("li", {
     className: "relative mb-2 text-text"
   }, "Automated data synchronization between internal systems and external platforms using custom-built console tools.")), /*#__PURE__*/React.createElement("p", {
     className: "mt-2 text-sm italic text-gray-400"
-  }, "Technologies: ASP.NET, MS SQL Server, Shopify Liquid, ReactJS, NodeJS, Jquery"))))), /*#__PURE__*/React.createElement("div", {
+  }, "Technologies: ASP.NET Core, MS SQL Server, Shopify Liquid, React, Node.js, jQuery"))))), /*#__PURE__*/React.createElement("div", {
     className: "mb-8"
   }, /*#__PURE__*/React.createElement("div", {
     className: "relative pb-4 pl-0 before:content-[''] before:absolute before:h-full before:top-4 before:bottom-0 before:w-0.5 before:bg-gray-600 before:left-7"

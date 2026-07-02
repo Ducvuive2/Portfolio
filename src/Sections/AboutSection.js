@@ -7,9 +7,9 @@ function AboutSection() {
           <div className="w-10 h-1 mb-12 rounded bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
         </div>
         <section id="about" className="p-8 shadow-2xl bg-background-card rounded-2xl">
-            <h1 className="text-3xl font-bold text-center typing-effect sm:text-4xl text-primary-variant-light">Hello, I'm Nguyen Vu Van Duc 🙌</h1>
+            <h1 className="text-3xl font-bold text-center typing-effect sm:text-4xl text-primary-variant-light">Hello, I'm Nguyen Vu Van Duc</h1>
             <p className="fade-in-text text-text">
-                Full-stack Software Engineer with experience in banking, healthcare and e-commerce systems using ASP.NET and modern frontend technologies. Skilled in building scalable web applications, real-time systems and cloud-based deployments with AWS and Docker.
+                Full-stack .NET Engineer with 3+ years of experience in banking, healthcare and e-commerce systems. Strong in ASP.NET Core, React, SignalR, Redis and cloud deployments. Experienced in production debugging, performance optimization and real-time features.
             </p>
         </section>
         <div className="mt-6">
@@ -22,7 +22,7 @@ function AboutSection() {
                     <div>
                         <span className="block text-lg font-bold text-text">Backend Development</span>
                         <p>
-                        Building scalable APIs and server-side logic with ASP.NET Core, NodeJS, SignalR, PostgreSQL and Redis.
+                        Building scalable APIs and server-side logic with ASP.NET Core, EF Core, RESTful APIs, SignalR, PostgreSQL and Redis.
                         </p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ function AboutSection() {
                     <div>
                         <span className="block text-lg font-bold text-text">Web Development</span>
                         <p>
-                            Crafting responsive interfaces with ReactJS, Next.js, TypeScript, Angular and Tailwind CSS.
+                            Crafting responsive interfaces with React, Next.js, TypeScript, Angular and Tailwind CSS.
                         </p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ function AboutSection() {
                     <div>
                         <span className="block text-lg font-bold text-text">Cloud & DevOps</span>
                         <p>
-                            Deploying and maintaining applications on AWS with Docker, collaborating with DevOps teams for production releases.
+                            Deploying and maintaining applications on AWS, Azure and Docker with CI/CD support for production releases.
                         </p>
                     </div>
                 </div>
@@ -113,11 +113,11 @@ function AboutSection() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="p-4 rounded-xl bg-background-card">
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Front-end</p>
-                <p className="text-text">ReactJS, Next.js, TypeScript, Angular, Tailwind CSS, JQuery, Shopify Liquid</p>
+                <p className="text-text">React, Next.js, TypeScript, Angular, Tailwind CSS, jQuery, Shopify Liquid</p>
             </div>
             <div className="p-4 rounded-xl bg-background-card">
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Back-end</p>
-                <p className="text-text">ASP.NET Core, NodeJS, SignalR</p>
+                <p className="text-text">ASP.NET Core, EF Core, SignalR, RESTful APIs, Clean Architecture</p>
             </div>
             <div className="p-4 rounded-xl bg-background-card">
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Mobile</p>
@@ -125,7 +125,7 @@ function AboutSection() {
             </div>
             <div className="p-4 rounded-xl bg-background-card">
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Cloud & DevOps</p>
-                <p className="text-text">Docker, AWS, Azure</p>
+                <p className="text-text">AWS, Azure SQL Database, Docker, CI/CD</p>
             </div>
             <div className="p-4 rounded-xl bg-background-card md:col-span-2">
                 <p className="mb-1 text-sm font-semibold text-primary-variant">Database</p>

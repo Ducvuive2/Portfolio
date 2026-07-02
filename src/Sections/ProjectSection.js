@@ -36,9 +36,11 @@ function ProjectSection() {
 
           <p className="text-text-light">
 
-            <strong className="text-primary">Description:</strong> Developed a full-stack e-commerce platform with product management, authentication and admin dashboard functionalities. <br/>
+            <strong className="text-primary">Description:</strong> Built a full-stack laptop e-commerce platform with customer storefront, React admin dashboard, product/cart/order management, authentication and checkout flow. <br/>
 
-            <strong className="text-primary">Technologies:</strong> ASP.NET Core, SQL Server, LINQ, xUnit. <br/>
+            <strong className="text-primary">Highlights:</strong> Designed a Clean Architecture backend with MediatR, FluentValidation and Redis caching; implemented transactional outbox, RabbitMQ, inbox/idempotency handling and xUnit tests. <br/>
+
+            <strong className="text-primary">Technologies:</strong> ASP.NET Core, EF Core, React, SQL Server, Redis, RabbitMQ, MediatR, xUnit. <br/>
 
             <strong className="text-primary"> Link:</strong> <a href="https://github.com/ducvuive/E-commerce_Laptop_" target="_blank" rel="noopener noreferrer" className="underline hover:text-text-muted">Source</a>
 
@@ -66,11 +68,11 @@ function ProjectSection() {
 
           <p className="text-text-light">
 
-            <strong className="text-primary">Description:</strong> Developed a real-time chat application with live messaging and image upload functionalities.<br/>
+            <strong className="text-primary">Description:</strong> Developed a real-time chat application with live messaging, image upload and user communication features.<br/>
 
-            <strong className="text-primary">Responsibilities:</strong> Designed the database schema, implemented real-time chat and image upload features, and managed project deployment. <br/>
+            <strong className="text-primary">Responsibilities:</strong> Designed the database schema, implemented real-time chat features using SignalR and managed Azure deployment with CI/CD. <br/>
 
-            <strong className="text-primary">Technologies:</strong> ASP.NET, Azure SQL Database, Azure storage, LINQ, SignalR. <br/>
+            <strong className="text-primary">Technologies:</strong> ASP.NET Core, Azure SQL Database, SignalR, CI/CD, Azure Deployment. <br/>
 
             <strong className="text-primary"> Link:</strong> <a href="https://dev.azure.com/19521844/ChatForFun" target="_blank" rel="noopener noreferrer" className="underline hover:text-text-muted">Source</a>
 

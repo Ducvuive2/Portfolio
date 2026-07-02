@@ -30,9 +30,11 @@ function ProjectSection() {
     className: "text-text-light"
   }, /*#__PURE__*/React.createElement("strong", {
     className: "text-primary"
-  }, "Description:"), " Developed a full-stack e-commerce platform with product management, authentication and admin dashboard functionalities. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
+  }, "Description:"), " Built a full-stack laptop e-commerce platform with customer storefront, React admin dashboard, product/cart/order management, authentication and checkout flow. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
     className: "text-primary"
-  }, "Technologies:"), " ASP.NET Core, SQL Server, LINQ, xUnit. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
+  }, "Highlights:"), " Designed a Clean Architecture backend with MediatR, FluentValidation and Redis caching; implemented transactional outbox, RabbitMQ, inbox/idempotency handling and xUnit tests. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
+    className: "text-primary"
+  }, "Technologies:"), " ASP.NET Core, EF Core, React, SQL Server, Redis, RabbitMQ, MediatR, xUnit. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
     className: "text-primary"
   }, " Link:"), " ", /*#__PURE__*/React.createElement("a", {
     href: "https://github.com/ducvuive/E-commerce_Laptop_",
@@ -57,11 +59,11 @@ function ProjectSection() {
     className: "text-text-light"
   }, /*#__PURE__*/React.createElement("strong", {
     className: "text-primary"
-  }, "Description:"), " Developed a real-time chat application with live messaging and image upload functionalities.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
+  }, "Description:"), " Developed a real-time chat application with live messaging, image upload and user communication features.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
     className: "text-primary"
-  }, "Responsibilities:"), " Designed the database schema, implemented real-time chat and image upload features, and managed project deployment. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
+  }, "Responsibilities:"), " Designed the database schema, implemented real-time chat features using SignalR and managed Azure deployment with CI/CD. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
     className: "text-primary"
-  }, "Technologies:"), " ASP.NET, Azure SQL Database, Azure storage, LINQ, SignalR. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
+  }, "Technologies:"), " ASP.NET Core, Azure SQL Database, SignalR, CI/CD, Azure Deployment. ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("strong", {
     className: "text-primary"
   }, " Link:"), " ", /*#__PURE__*/React.createElement("a", {
     href: "https://dev.azure.com/19521844/ChatForFun",

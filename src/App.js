@@ -48,7 +48,7 @@ function App() {
     <div className="flex justify-between w-2/3 mx-auto mt-15">
       <div className="sticky flex flex-col items-center w-1/3 mt-5 shadow-2xl bg-background-sidebar text-text rounded-2xl top-5 h-fit p-15">
         <div className="text-center">
-          <a href="/images/Dylann.webp" target="_blank" rel="noopener noreferrer" title="Nguyen Vu Van Duc - Full-stack Software Engineer">
+          <a href="/images/Dylann.webp" target="_blank" rel="noopener noreferrer" title="Nguyen Vu Van Duc - Full-stack .NET Engineer">
             <img 
               src="/images/profile.png" 
               alt="Profile" 
@@ -56,7 +56,7 @@ function App() {
             />
           </a>
           <h2 className="mt-2.5 text-2xl font-semibold text-primary-variant-light">Nguyen Vu Van Duc</h2>
-          <p className="bg-background-hover px-2.5 py-1.5 rounded text-sm mb-5 mt-2">Full-stack Software Engineer</p>
+          <p className="bg-background-hover px-2.5 py-1.5 rounded text-sm mb-5 mt-2">Full-stack .NET Engineer</p>
           <hr className="border-none h-0.5 bg-gray-600 w-11/12 mx-auto my-5" />
           <div className="mb-8 space-y-4">
             <div className="flex items-center p-4 mb-4 rounded-lg bg-background-content">
@@ -71,6 +71,22 @@ function App() {
                 >
                   duc20062001@gmail.com
                 </span>
+              </div>
+            </div>
+            <div className="flex items-center p-4 mb-4 rounded-lg bg-background-content">
+              <div className="flex items-center justify-center w-12 h-12 mr-4 bg-gray-800 rounded neumorphic-icon">
+                <i className="fas fa-globe"></i>
+              </div>
+              <div className="flex flex-col items-start">
+                <label className="mb-1 text-xs uppercase text-text-muted">Website</label>
+                <a
+                  href="https://dylanapp.io.vn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-bold cursor-pointer text-text"
+                >
+                  dylanapp.io.vn
+                </a>
               </div>
             </div>
             <div className="flex items-center p-4 mb-4 rounded-lg bg-background-content">
